@@ -1,0 +1,89 @@
+support-for-ie ?= false
+vendor-prefixes ?= webkit moz o official
+
+@import 'nib'
+@import 'variables'
+
+global-reset()
+reset-html5()
+
+body
+  color $dark
+
+#app
+
+  form
+    border-bottom 1px solid $dark
+
+    input, button
+
+      &:focus
+        outline none
+
+    input
+      font-size 16px
+      width 260px
+      padding 8px 5px
+      border none
+
+    .slash
+      font-size 16px
+      padding 0 10px
+
+    .divider
+      border-right 1px solid $dark
+      margin 0 10px
+
+    button
+      display inline-block
+      background-color transparent
+      border none
+      padding 5px 8px
+      font-size 16px
+      cursor pointer
+      transition transform 200ms linear
+      border-radius 4px
+
+      &:hover
+        transform scale(1.2)
+
+  .wrapper
+    width 900px
+    margin 0 auto
+
+  .autocomplete
+    position absolute
+    //omg -999px...
+    left -999px
+    z-index 9
+    background-color #fff
+    //padding 5px
+    box-shadow 0 2px 4px 0 rgba(0,0,0,0.7)
+
+    .item
+      padding 5px 8px
+      cursor pointer
+
+      &:hover
+        background-color whitesmoke
+
+
+  .issues-list
+    padding-top 20px
+
+    .item
+      padding 5px 10px
+      border-bottom 1px dashed $dark
+      background-color #fff
+      //margin-bottom 20px
+
+      .meta
+        height 30px
+
+        img
+          width 30px
+          float left
+          margin-right 10px
+
+      p
+        margin-top 5px

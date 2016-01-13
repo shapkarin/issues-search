@@ -1,0 +1,22 @@
+{
+  "name": "Github-searcher",
+  "version": "0.0.1",
+  "description": "Search github issues by user and repository",
+  "author": {
+    "name": "Yury",
+    "email": "yury@shapkarin.me",
+    "url": "http://shapkarin.me"
+  },
+  "homepage": "http://music.shapkarin.me",
+  "engines": {
+    "node": "0.10.35",
+    "npm": "2.1.17"
+  },
+  "dependencies": {
+    "express": "3.3.5",
+    "jade": "*",
+    "stylus": "*",
+    "nib": "*"
+  },
+  "private": true
+}
